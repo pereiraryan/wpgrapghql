@@ -1,0 +1,98 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #252527;
+    background: #fd746c; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff9068, #fd746c);
+    background: linear-gradient(to right, #ff9068, #fd746c);
+  }
+  
+  .app {
+    margin: 60px auto;
+    padding: 0 40px;
+    max-width: 800px;
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .search-form {
+    margin-bottom: 40px;
+  }
+  
+  .search-form input {
+    width: 100%;
+    padding: 20px;
+    font-size: 25px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .posts-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .post-card {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  @media screen and (min-width: 500px) {
+    .post-card {
+      width: 48%;
+    }
+  }
+  
+  @media screen and (min-width: 800px) {
+    .post-card {
+      width: 32%;
+    }
+  }
+  
+  .post-card img {
+    height: auto;
+    max-height: 300px;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .post-card a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .post-card h3 {
+    margin: 0 0 40px;
+    word-wrap: break-word;
+  }
+  
+  .post-card p {
+    display: block;
+  }
+  
+  .text-bold {
+    font-weight: 700;
+  }
+  
